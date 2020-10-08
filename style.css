@@ -1,0 +1,42 @@
+#main{
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:auto;
+    margin:0 auto;
+    height:400px;
+}
+
+.photo{
+    float: left;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    margin-right: 20px;
+    margin-top: 15px;
+    background-color: #414141;
+}
+
+.text{
+    float: left;
+    width: 300px;
+}
+
+.social-media{
+    padding-left: 5px;
+}
+
+body{
+    background-color: #222831;
+}
+
+p::after{
+    content: "I am doing something.";
+  }
+  
+p:hover::after {
+    content: "You can contact me from Discord\aYou can reach my repository from Github";
+    white-space: pre-wrap;
+  }
