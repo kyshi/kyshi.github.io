@@ -1,4 +1,33 @@
+@keyframes opening {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes switching {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes switching2 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 #main{
+    animation-duration: 3s;
+    animation-name: opening;
     color: #FFF;
     font-family: Arial, Helvetica, sans-serif;
     display:flex;
@@ -21,7 +50,7 @@
 
 .text{
     float: left;
-    width: 300px;
+    width: 350px;
 }
 
 .social-media{
@@ -32,11 +61,15 @@ body{
     background-color: #222831;
 }
 
-p::after{
+p::after{   
+    animation-duration: 1s;
+    animation-name: switching;
     content: "I am doing something.";
-  }
+}
   
 p:hover::after {
+    animation-duration: 1s;
+    animation-name: switching;
     content: "You can contact me from Discord\aYou can reach my repository from Github";
     white-space: pre-wrap;
-  }
+}
