@@ -69,7 +69,7 @@ p::after{
   
 p:hover::after {
     animation-duration: 1s;
-    animation-name: switching;
+    animation-name: switching2;
     content: "You can contact me from Discord\aYou can reach my repository from Github";
     white-space: pre-wrap;
 }
