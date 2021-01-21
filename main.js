@@ -1,11 +1,3 @@
-var is_changed = 0;
-if(!localStorage.getItem("theme")) {
-    localStorage.setItem("theme", 0);
-}
-else{
-    is_changed = localStorage.getItem("theme");
-    change_theme();
-}
 function change_theme(){
     if(is_changed == 0){
         var root = document.querySelector(":root"); 
@@ -33,4 +25,13 @@ function change_theme(){
         localStorage.setItem("theme", 1);
         console.log(is_changed);
     }
+}
+
+var is_changed = 0;
+if(!localStorage.getItem("theme")) {
+    localStorage.setItem("theme", 0);
+}
+else{
+    is_changed = localStorage.getItem("theme");
+    change_theme();
 }
